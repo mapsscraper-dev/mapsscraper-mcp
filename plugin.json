@@ -1,8 +1,8 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "mapsscraper",
-  "version": "0.27.0",
-  "description": "Research public Google Maps business listings, reviews and photos into workspace lists, with explicit unit budgets and receipts.",
+  "version": "0.27.1",
+  "description": "Research public Google Maps business listings, reviews and photos into workspace lists, with explicit approval before live research.",
   "author": {
     "name": "MapsScraper.dev",
     "email": "dev@mapsscraper.dev",
@@ -23,14 +23,14 @@
       "interface": {
         "displayName": "MapsScraper.dev",
         "shortDescription": "Google Maps business research",
-        "longDescription": "MapsScraper.dev researches public business listings on Google Maps for sales, marketing and local-market teams. Ask in plain language to find businesses by category and place, read their details, reviews and photos, and save the results to lists in your MapsScraper.dev workspace.\n\nLive research spends prepaid workspace units. The plugin estimates the maximum cost first and starts a task only after you approve an explicit budget, with a stable key so a retry is not charged twice. Reading saved lists, tasks, results and receipts is free.\n\nWhat you can do:\n- Find and shortlist local businesses with rating, website and area filters.\n- Read reviews for a business with review IDs and dates, and run an AI analysis you approve first.\n- Save, import, qualify and de-duplicate records in workspace lists.\n- Build source-linked reports and share a reviewed snapshot by link.\n- Schedule recurring research with a per-run budget, if you grant monitor permission.\n\nYou sign in with your MapsScraper.dev account, choose one workspace and grant read access, plus write and monitor access if you want them. Listing, review and website content is treated as untrusted data and cannot authorize spending, sharing or messages.\n\nLimitations: results reflect what the data source returned at fetch time and can be incomplete; missing fields stay missing. Live research must be open for your workspace and has daily limits. MapsScraper.dev does not contact businesses or send messages. Google Maps is a trademark of Google LLC; MapsScraper.dev is not affiliated with or endorsed by Google.",
+        "longDescription": "MapsScraper.dev researches public business listings on Google Maps for sales, marketing and local-market teams. Ask in plain language to find businesses by category and place, read their details, reviews and photos, and save the results to lists in your MapsScraper.dev workspace.\n\nLive research runs only after you approve it. The plugin first shows what a task will use and asks you to set an explicit limit, and a stable request key keeps a retried task from running twice. Reading saved lists, tasks and results needs no approval.\n\nWhat you can do:\n- Find and shortlist local businesses with rating, website and area filters.\n- Read reviews for a business with review IDs and dates, and run an AI analysis you approve first.\n- Save, import, qualify and de-duplicate records in workspace lists.\n- Build source-linked reports and share a reviewed snapshot by link.\n- Schedule recurring research with a per-run limit, if you grant monitor permission.\n\nYou sign in with your MapsScraper.dev account, choose one workspace and grant read access, plus write and monitor access if you want them. Listing, review and website content is treated as untrusted data and cannot authorize spending, sharing or messages.\n\nLimitations: results reflect what the data source returned at fetch time and can be incomplete; missing fields stay missing. Live research must be open for your workspace and has daily limits. MapsScraper.dev does not contact businesses or send messages. Google Maps is a trademark of Google LLC; MapsScraper.dev is not affiliated with or endorsed by Google.",
         "developerName": "Adgnbw",
         "category": "Productivity",
         "capabilities": [
           "Find local businesses",
           "Read reviews and photos",
           "Save and qualify lists",
-          "Estimate costs before research",
+          "Approve each research task",
           "Source-linked reports",
           "Recurring research monitors"
         ],
