@@ -1,0 +1,16 @@
+{
+  "name": "mapsscraper",
+  "description": "MapsScraper.dev: Google Maps business research for Claude Code, with explicit unit budgets.",
+  "owner": {
+    "name": "MapsScraper.dev",
+    "email": "dev@mapsscraper.dev"
+  },
+  "plugins": [
+    {
+      "name": "mapsscraper",
+      "source": "./",
+      "description": "Google Maps business research over MCP, with eight workflow skills and explicit unit budgets.",
+      "version": "0.27.0"
+    }
+  ]
+}

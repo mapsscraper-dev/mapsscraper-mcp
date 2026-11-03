@@ -1,0 +1,21 @@
+{
+  "name": "mapsscraper",
+  "version": "0.27.0",
+  "description": "Research public Google Maps business listings, reviews and photos into workspace lists, with explicit unit budgets and receipts.",
+  "author": {
+    "name": "MapsScraper.dev",
+    "email": "dev@mapsscraper.dev",
+    "url": "https://mapsscraper.dev"
+  },
+  "homepage": "https://mapsscraper.dev/agents",
+  "repository": "https://github.com/mapsscraper-dev/mapsscraper-mcp",
+  "license": "MIT",
+  "keywords": [
+    "google-maps",
+    "local-business",
+    "lead-generation",
+    "reviews",
+    "mcp"
+  ],
+  "privacyPolicyUrl": "https://mapsscraper.dev/privacy"
+}

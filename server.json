@@ -1,0 +1,21 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "dev.mapsscraper/mapsscraper",
+  "title": "MapsScraper.dev",
+  "description": "Research public business listings, reviews and photos into lists with explicit unit budgets.",
+  "version": "0.27.0",
+  "websiteUrl": "https://mapsscraper.dev",
+  "icons": [
+    {
+      "src": "https://mapsscraper.dev/favicon.svg",
+      "mimeType": "image/svg+xml",
+      "sizes": ["any"]
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mapsscraper.dev/mcp"
+    }
+  ]
+}

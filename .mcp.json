@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "mapsscraper": {
+      "type": "http",
+      "url": "https://mapsscraper.dev/mcp"
+    }
+  }
+}
