@@ -9,7 +9,7 @@ Connect an AI assistant to [MapsScraper.dev](https://mapsscraper.dev) to researc
 
 ## How spending works
 
-Reading lists, tasks, results and receipts is free. Live research spends prepaid workspace units:
+Reading lists, tasks, results and receipts is free. Live research spends prepaid API plan credits:
 
 1. The assistant calls `estimate_job` and shows you the maximum cost.
 2. You approve an explicit budget. The task runs with `max_units` set to that budget and a stable `idempotency_key`.
@@ -54,7 +54,7 @@ The [`skills/`](skills) folder holds eight workflows that tell an assistant how 
 
 | Skill | Use it to |
 | --- | --- |
-| [`setup`](skills/setup/SKILL.md) | check the connection, enabled workflows and units |
+| [`setup`](skills/setup/SKILL.md) | check the connection, enabled workflows and credits |
 | [`local-prospecting`](skills/local-prospecting/SKILL.md) | find and shortlist local businesses |
 | [`business-enrichment`](skills/business-enrichment/SKILL.md) | add details, import rows, write back and merge duplicates |
 | [`competitor-brief`](skills/competitor-brief/SKILL.md) | compare a peer group in a source-linked report |
@@ -72,7 +72,7 @@ The server registers 88 tools. Each one has a title and read-only, destructive, 
 | Tool | What it does | Permission |
 | --- | --- | --- |
 | `get_capabilities` | Check capabilities | read |
-| `get_account_usage` | Read unit balance | read |
+| `get_account_usage` | Read credit balance | read |
 | `get_workspace_config` | Read workspace settings | read |
 | `get_billing_summary` | Read billing summary | read |
 | `get_client_portal_summary` | Read client portal summary | read |
@@ -82,7 +82,7 @@ The server registers 88 tools. Each one has a title and read-only, destructive, 
 | Tool | What it does | Permission |
 | --- | --- | --- |
 | `estimate_job` | Estimate task cost | read |
-| `create_job` | Start research task (spends units) | write |
+| `create_job` | Start research task (spends credits) | write |
 | `get_job` | Read task status | read |
 | `get_job_results` | Read task results | read |
 | `list_jobs` | List research tasks | read |
@@ -90,11 +90,11 @@ The server registers 88 tools. Each one has a title and read-only, destructive, 
 | `preview_provider_continuation` | Preview next result page | read |
 | `preview_stored_result_restoration` | Preview result restoration | read |
 | `read_job_investigations` | Read task investigations | read |
-| `create_batch` | Start task batch (spends units) | write |
+| `create_batch` | Start task batch (spends credits) | write |
 | `get_batch` | Read task batch | read |
 | `cancel_batch` | Cancel task batch | write |
 | `preview_polygon_plan` | Preview polygon search plan | read |
-| `create_reviewed_polygon_batch` | Start polygon search (spends units) | write |
+| `create_reviewed_polygon_batch` | Start polygon search (spends credits) | write |
 
 ### Lists and records
 
@@ -124,7 +124,7 @@ The server registers 88 tools. Each one has a title and read-only, destructive, 
 | Tool | What it does | Permission |
 | --- | --- | --- |
 | `preview_review_ai` | Preview review analysis | read |
-| `generate_review_ai` | Run review analysis (spends units) | write |
+| `generate_review_ai` | Run review analysis (spends credits) | write |
 | `list_review_ai` | List review analyses | read |
 | `get_review_ai` | Read review analysis | read |
 | `cancel_review_ai` | Cancel review analysis | write |
@@ -202,11 +202,11 @@ The server registers 88 tools. Each one has a title and read-only, destructive, 
 
 | Tool | What it does | Permission |
 | --- | --- | --- |
-| `create_monitor` | Create monitor (spends units) | monitors |
+| `create_monitor` | Create monitor (spends credits) | monitors |
 | `get_monitor` | Read monitor | read |
 | `read_monitor_creation_receipt` | Recover monitor receipt | read |
 | `set_monitor_active` | Pause or resume monitor | monitors |
-| `run_monitor` | Run monitor now (spends units) | monitors |
+| `run_monitor` | Run monitor now (spends credits) | monitors |
 | `delete_monitor` | Delete monitor | monitors |
 | `read_monitor_runs` | Read monitor runs | read |
 
