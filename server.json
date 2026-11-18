@@ -2,8 +2,8 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "dev.mapsscraper/mapsscraper",
   "title": "MapsScraper.dev",
-  "description": "Research public business listings, reviews and photos into lists with explicit unit budgets.",
-  "version": "0.27.0",
+  "description": "Research public business listings, reviews and photos into lists with explicit credit budgets.",
+  "version": "0.27.5",
   "websiteUrl": "https://mapsscraper.dev",
   "icons": [
     {
