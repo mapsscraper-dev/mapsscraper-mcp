@@ -15,7 +15,7 @@ Reading lists, tasks, results and receipts is free. Live research spends prepaid
 2. You approve an explicit budget. The task runs with `max_units` set to that budget and a stable `idempotency_key`.
 3. A retry with the same key is never charged twice. If an outcome is uncertain, the assistant reads the task instead of calling again.
 
-Live research must be open for your workspace and has a daily total. `get_capabilities` shows what is available to your workspace.
+Live research spends credits from a paid MapsScraper API plan and has a daily total. `get_capabilities` shows what is available to your workspace.
 
 ## Connect
 
